@@ -94,5 +94,29 @@ namespace rms_testapp_cs.Properties {
                 this["rms_tid"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string oAuthUrl {
+            get {
+                return ((string)(this["oAuthUrl"]));
+            }
+            set {
+                this["oAuthUrl"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string apiUrl {
+            get {
+                return ((string)(this["apiUrl"]));
+            }
+            set {
+                this["apiUrl"] = value;
+            }
+        }
     }
 }

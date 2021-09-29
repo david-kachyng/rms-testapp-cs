@@ -85,6 +85,8 @@ namespace rms_testapp_cs
             //If you receive script errors on login then call this 
             IEbrowserFix();
             var rms = new SmartBridge.Api();
+            rms.setoAuthUrl(txtoAuthUrl.Text);
+            rms.setBaseUrl(txtBaseUrl.Text);
             rms.setKey(txtClientID.Text);
             rms.setSecret(txtSecret.Text);
             rms.setCallBackUrl(txtReturnUrl.Text);
@@ -117,6 +119,8 @@ namespace rms_testapp_cs
             try
             {
                 var rms = new SmartBridge.Api();
+                rms.setoAuthUrl(txtoAuthUrl.Text);
+                rms.setBaseUrl(txtBaseUrl.Text);
                 rms.setKey(txtClientID.Text);
                 rms.setSecret(txtSecret.Text);
                 rms.setToken(txtaccess.Text);
@@ -134,6 +138,8 @@ namespace rms_testapp_cs
         private void cmdGetTerminalList_Click(object sender, EventArgs e)
         {
             var rms = new SmartBridge.Api();
+            rms.setoAuthUrl(txtoAuthUrl.Text);
+            rms.setBaseUrl(txtBaseUrl.Text);
             rms.setKey(txtClientID.Text);
             rms.setSecret(txtSecret.Text);
             rms.setToken(txtaccess.Text);
@@ -163,6 +169,8 @@ namespace rms_testapp_cs
             try
             {
                 var rms = new SmartBridge.Api();
+                rms.setoAuthUrl(txtoAuthUrl.Text);
+                rms.setBaseUrl(txtBaseUrl.Text);
                 rms.setKey(txtClientID.Text);
                 rms.setSecret(txtSecret.Text);
                 rms.setRefreshToken(txtRefresh.Text);
@@ -187,6 +195,8 @@ namespace rms_testapp_cs
         private void CmdMakeTransaction_Click(object sender, EventArgs e)
         {
             var rms = new SmartBridge.Api();
+            rms.setoAuthUrl(txtoAuthUrl.Text);
+            rms.setBaseUrl(txtBaseUrl.Text);
             rms.setKey(txtClientID.Text);
             rms.setSecret(txtSecret.Text);
             rms.setToken(txtaccess.Text);
@@ -212,6 +222,8 @@ namespace rms_testapp_cs
         private void cmdCheckStatus_Click(object sender, EventArgs e)
         {
             var rms = new SmartBridge.Api();
+            rms.setoAuthUrl(txtoAuthUrl.Text);
+            rms.setBaseUrl(txtBaseUrl.Text);
             rms.setKey(txtClientID.Text);
             rms.setSecret(txtSecret.Text);
             rms.setToken(txtaccess.Text);
